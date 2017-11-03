@@ -1,17 +1,23 @@
 /*----------------------------------------------------------
- *				HTBLA-Leonding / Klasse: 2AHDV
+ *				HTBLA-Leonding / Klasse: 2AHIF
  * ---------------------------------------------------------
  * Exercise Number: 0
- * Title:			chess.h
- * Author:			P. Bauer
- * Due Date:		October 15, 2014
+ * Title:			chess.c
+ * Author:			Marcel Pölzl
+ * Due Date:		3. 11. 2017
  * ----------------------------------------------------------
  * Description:
- * Basic chess functions.
+ * Implementation of basic chess functions.
  * ----------------------------------------------------------
  */
  #ifndef __CHESS_H
  #define __CHESS_H
+
+ enum PieceType{
+   Pawn, Rook, Knight, Bishop, Queen, King, NoPiece
+ };
+ enum PieceColor{White, Black};
+ enum MoveType{NormalMove, CaptureMove};
 
  struct ChessPiece{
    enum PieceColor color;
@@ -26,11 +32,6 @@
  typedef char File;
  typedef int Rank;
 
- enum PieceType{
-   Pawn, Rook, Knight, Bishop, Queen, King, NoPiece
- };
- enum PieceColor{White, Black};
- enum MoveType{NormalMove, CaptureMove};
 
  bool 	is_piece (struct ChessPiece pc, enum PieceColor color, enum PieceType type);
 void 	init_chess_board (ChessBoard chess_board);

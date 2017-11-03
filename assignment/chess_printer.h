@@ -1,13 +1,13 @@
 /*----------------------------------------------------------
- *				HTBLA-Leonding / Klasse: 2AHDV
+ *				HTBLA-Leonding / Klasse: 2AHIF
  * ---------------------------------------------------------
  * Exercise Number: 0
- * Title:			chess_printer.h
- * Author:			P. Bauer
- * Due Date:		November 03, 2010
+ * Title:			chess.c
+ * Author:			Marcel Pölzl
+ * Due Date:		3. 11. 2017
  * ----------------------------------------------------------
  * Description:
- * Functions for printing a chess board.
+ * Implementation of basic chess functions.
  * ----------------------------------------------------------
  */
 
